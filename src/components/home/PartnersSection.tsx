@@ -1,5 +1,12 @@
 
 const PartnersSection = () => {
+  const partners = [
+    "ГМИИ им. А.С. Пушкина",
+    "Cosmoscow",
+    "Галерея \"К35\"",
+    "The Art Newspaper Russia"
+  ];
+
   return (
     <section className="py-16 md:py-24 bg-exhibition-anthracite border-t border-exhibition-gold/10">
       <div className="container px-4 md:px-6">
@@ -13,11 +20,11 @@ const PartnersSection = () => {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center reveal">
-          {[1, 2, 3, 4].map((i) => (
+          {partners.map((partner, i) => (
             <div key={i} className="flex justify-center opacity-70 hover:opacity-100 transition-opacity">
-              <div className="h-12 w-32 bg-foreground/10 rounded-md flex items-center justify-center">
-                <div className="font-serif text-exhibition-gold text-lg font-medium">
-                  PARTNER {i}
+              <div className="h-12 w-auto px-4 bg-foreground/10 rounded-md flex items-center justify-center">
+                <div className="font-serif text-exhibition-gold text-sm md:text-lg font-medium">
+                  {partner}
                 </div>
               </div>
             </div>
