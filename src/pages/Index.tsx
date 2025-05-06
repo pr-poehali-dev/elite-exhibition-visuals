@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import HeroSection from "@/components/home/HeroSection";
 import FeaturesSection from "@/components/home/FeaturesSection";
@@ -19,15 +18,15 @@ const Index = () => {
   }, []);
 
   // Дата открытия выставки (пример)
-  const exhibitionDate = new Date("2025-07-20T10:00:00");
+  const exhibitionDate = new Date("2025-10-15T10:00:00");
 
   return (
     <>
       <Header />
       <main>
         <HeroSection 
-          title={<><GlitchEffect text="MULTIPLE" /> <span className="text-exhibition-gold">ART</span> 2025</>}
-          subtitle="Международная выставка искусства и NFT-инвестиций"
+          title={<><GlitchEffect text="Эстамп:" /> <span className="text-exhibition-gold">от Дюрера к цифре</span></>}
+          subtitle="15 октября - 5 ноября, 2025, Москва"
           description="Уникальная выставка, объединяющая классические техники гравюры и современные NFT-технологии. Откройте для себя новые возможности инвестирования в искусство."
         />
         
