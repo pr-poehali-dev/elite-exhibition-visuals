@@ -34,44 +34,12 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 14% 15%;
-    --sidebar-foreground: 35 42% 93%;
-    --sidebar-primary: 45 45% 60%;
-    --sidebar-primary-foreground: 220 14% 19%;
-    --sidebar-accent: 220 14% 25%;
-    --sidebar-accent-foreground: 35 42% 93%;
-    --sidebar-border: 220 14% 30%;
-    --sidebar-ring: 45 45% 60%;
-  }
-
-  .dark {
-    --background: 220 14% 10%;
-    --foreground: 35 42% 93%;
-
-    --card: 220 14% 15%;
-    --card-foreground: 35 42% 93%;
-
-    --popover: 220 14% 15%;
-    --popover-foreground: 35 42% 93%;
-
-    --primary: 220 85% 22%;
-    --primary-foreground: 35 42% 93%;
-
-    --secondary: 45 45% 60%;
-    --secondary-foreground: 220 14% 15%;
-
-    --muted: 220 10% 20%;
-    --muted-foreground: 35 20% 75%;
-
-    --accent: 187 100% 40%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 357 81% 57%;
-    --destructive-foreground: 35 42% 93%;
-
-    --border: 220 14% 25%;
-    --input: 220 14% 25%;
-    --ring: 45 45% 60%;
+    --exhibition-gold: #D4AF37;
+    --exhibition-beige: #E1C699;
+    --exhibition-anthracite: #1E2534;
+    --exhibition-darkblue: #14213D;
+    --exhibition-aquamarine: #06C4CE;
+    --exhibition-cinnabar: #E54B4B;
   }
 }
 
@@ -147,77 +115,6 @@
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-/* Готический шрифт для заголовков выставки */
-@font-face {
-  font-family: 'GothicFont';
-  src: url('/fonts/gothic.woff2') format('woff2');
-  font-display: swap;
-}
-
-.font-gothic {
-  font-family: 'GothicFont', serif;
-}
-
-/* Glitch Effect для текста */
-.glitch-text {
-  position: relative;
-  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-              -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-              0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  animation: glitch 500ms infinite;
-}
-
-.glitch-text-r {
-  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75);
-  animation: glitch-r 1s infinite;
-}
-
-.glitch-text-g {
-  text-shadow: -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
-  animation: glitch-g 1.5s infinite;
-}
-
-.glitch-text-b {
-  text-shadow: 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  animation: glitch-b 2s infinite;
-}
-
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes glitch-r {
-  0% { transform: translate(0); }
-  20% { transform: translate(-1px, 1px); }
-  40% { transform: translate(-1px, -1px); }
-  60% { transform: translate(1px, 1px); }
-  80% { transform: translate(0, -1px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes glitch-g {
-  0% { transform: translate(0); }
-  20% { transform: translate(1px, -1px); }
-  40% { transform: translate(1px, 1px); }
-  60% { transform: translate(-1px, -1px); }
-  80% { transform: translate(-1px, 0); }
-  100% { transform: translate(0); }
-}
-
-@keyframes glitch-b {
-  0% { transform: translate(0); }
-  20% { transform: translate(0, 1px); }
-  40% { transform: translate(1px, 0); }
-  60% { transform: translate(0, -1px); }
-  80% { transform: translate(-1px, 0); }
-  100% { transform: translate(0); }
 }
 
 /* Анимации для кроссфейда изображений */
