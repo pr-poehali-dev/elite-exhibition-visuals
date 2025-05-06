@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import HeroSection from "@/components/home/HeroSection";
 import ExhibitionsSection from "@/components/home/ExhibitionsSection";
@@ -27,7 +26,7 @@ const Index = () => {
       <main className="min-h-screen bg-exhibition-anthracite text-foreground overflow-hidden">
         <HeroSection 
           title="Эстамп: от Дюрера к цифре"
-          subtitle="15 мая — 30 июня 2025, Москва"
+          subtitle="15 октября - 5 ноября 2025, Москва"
           description="Уникальный взгляд на печатную графику как на перспективный инвестиционный актив. От старинных гравюр до цифровых NFT — искусство, сохраняющее ценность сквозь время."
         />
         
