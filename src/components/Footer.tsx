@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,7 @@ const Footer = () => {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div>
-            <h3 className="text-xl font-serif font-semibold text-exhibition-gold mb-6">LUXEART</h3>
+            <h3 className="text-xl font-serif font-semibold text-exhibition-gold mb-6">MULTIPLEART</h3>
             <p className="text-sm text-foreground/80 mb-4">
               Эксклюзивная платформа для инвесторов в искусство и коллекционеров, 
               объединяющая традиции и инновации в мире элитарного искусства.
@@ -104,7 +103,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 mt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-foreground/60">
-            <p>© 2025 LUXEART. Все права защищены.</p>
+            <p> 2025 LUXEART. Все права защищены.</p>
             <div className="flex space-x-4 mt-4 sm:mt-0">
               <Link to="/privacy" className="hover:text-exhibition-gold transition-colors">
                 Политика конфиденциальности
