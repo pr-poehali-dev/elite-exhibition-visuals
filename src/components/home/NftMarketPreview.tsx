@@ -9,19 +9,19 @@ const NftMarketPreview = () => {
       title: "Меланхолия XII",
       artist: "Digital Dürer",
       price: "0.15 ETH",
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop"
     },
     {
       title: "Рыцарь цифрового воображения",
       artist: "Crypto Engraver",
       price: "0.25 ETH",
-      image: "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=400&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?q=80&w=400&auto=format&fit=crop"
     },
     {
       title: "Polyform Genesis",
       artist: "Neo Renaissance",
       price: "0.18 ETH",
-      image: "https://images.unsplash.com/photo-1544911691-ca7a036a1a6f?w=400&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?q=80&w=400&auto=format&fit=crop"
     }
   ];
 
