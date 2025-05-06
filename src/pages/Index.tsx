@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from "react");
 import HeroSection from "@/components/home/HeroSection";
-import ExhibitionsSection from "@/components/home/ExhibitionsSection";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import CtaSection from "@/components/home/CtaSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import CountdownTimer from "@/components/home/CountdownTimer";
 import NftMarketPreview from "@/components/home/NftMarketPreview";
-import { featuredExhibitions } from "@/data/exhibitions";
 import { setupRevealAnimations } from "@/utils/animation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -32,8 +30,6 @@ const Index = () => {
         
         <CountdownTimer targetDate={exhibitionDate} />
         
-        <ExhibitionsSection exhibitions={featuredExhibitions} />
-        
         <FeaturesSection />
         
         <NftMarketPreview />
@@ -46,5 +42,4 @@ const Index = () => {
     </>
   );
 };
-
 export default Index;
