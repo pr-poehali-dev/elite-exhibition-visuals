@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -113,4 +112,89 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* Готический шрифт для заголовков выставки */
+@font-face {
+  font-family: 'GothicFont';
+  src: url('/fonts/gothic.woff2') format('woff2');
+  font-display: swap;
+}
+
+.font-gothic {
+  font-family: 'GothicFont', serif;
+}
+
+/* Glitch Effect для текста */
+.glitch-text {
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+              -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+              0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 500ms infinite;
+}
+
+.glitch-text-r {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75);
+  animation: glitch-r 1s infinite;
+}
+
+.glitch-text-g {
+  text-shadow: -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
+  animation: glitch-g 1.5s infinite;
+}
+
+.glitch-text-b {
+  text-shadow: 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch-b 2s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-r {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  80% { transform: translate(0, -1px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-g {
+  0% { transform: translate(0); }
+  20% { transform: translate(1px, -1px); }
+  40% { transform: translate(1px, 1px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(-1px, 0); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-b {
+  0% { transform: translate(0); }
+  20% { transform: translate(0, 1px); }
+  40% { transform: translate(1px, 0); }
+  60% { transform: translate(0, -1px); }
+  80% { transform: translate(-1px, 0); }
+  100% { transform: translate(0); }
+}
+
+/* Анимации для кроссфейда изображений */
+@keyframes crossfade {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+.animate-crossfade-1 {
+  animation: crossfade 16s infinite;
+}
+
+.animate-crossfade-2 {
+  animation: crossfade 16s infinite 8s;
 }

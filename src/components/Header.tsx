@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown, Search } from "lucide-react";
@@ -15,38 +14,41 @@ const Header = () => {
         <div className="flex items-center">
           <Link to="/" className="mr-6">
             <span className="text-exhibition-gold font-serif text-xl font-bold tracking-wide">
-              LUXE<span className="text-exhibition-aquamarine">ART</span>
+              MULTIPLE<span className="text-exhibition-aquamarine">ART</span>
             </span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/exhibitions" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
-              Выставки
+            <Link to="/about" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
+              О выставке
+            </Link>
+            <Link to="/program" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
+              Программа
             </Link>
             <Link to="/artists" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
-              Художники
+              Артисты
+            </Link>
+            <Link to="/gallery" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
+              Галерея
             </Link>
             <div className="relative group">
-              <button className="flex items-center text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
-                Инвестиции <ChevronDown size={16} className="ml-1" />
+              <button className="flex items-center text-foreground/80 hover:text-exhibition-aquamarine transition-colors text-sm font-medium">
+                NFT <ChevronDown size={16} className="ml-1" />
               </button>
               <div className="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-card border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                 <div className="py-2 px-3">
-                  <Link to="/investments/art-funds" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-gold">
-                    Арт-фонды
+                  <Link to="/nft/market" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-aquamarine">
+                    NFT-Маркет
                   </Link>
-                  <Link to="/investments/nft" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-gold">
-                    NFT Коллекции
+                  <Link to="/nft/create" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-aquamarine">
+                    Создать NFT
                   </Link>
-                  <Link to="/investments/analytics" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-gold">
-                    Аналитика рынка
+                  <Link to="/nft/collection" className="block py-2 text-sm text-foreground/80 hover:text-exhibition-aquamarine">
+                    Коллекция
                   </Link>
                 </div>
               </div>
             </div>
-            <Link to="/events" className="text-foreground/80 hover:text-exhibition-gold transition-colors text-sm font-medium">
-              Мероприятия
-            </Link>
           </nav>
         </div>
         
@@ -56,7 +58,7 @@ const Header = () => {
           </button>
           
           <Button className="bg-exhibition-gold hover:bg-exhibition-gold/90 text-exhibition-anthracite hidden md:inline-flex">
-            Личный кабинет
+            Купить билет
           </Button>
           
           <Sheet>
@@ -67,20 +69,23 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="bg-exhibition-anthracite border-l border-exhibition-gold/20">
               <nav className="flex flex-col space-y-4 mt-8">
-                <Link to="/exhibitions" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
-                  Выставки
+                <Link to="/about" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
+                  О выставке
+                </Link>
+                <Link to="/program" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
+                  Программа
                 </Link>
                 <Link to="/artists" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
-                  Художники
+                  Артисты
                 </Link>
-                <Link to="/investments" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
-                  Инвестиции
+                <Link to="/gallery" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
+                  Галерея
                 </Link>
-                <Link to="/events" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
-                  Мероприятия
+                <Link to="/nft" className="text-foreground hover:text-exhibition-aquamarine py-2 transition-colors">
+                  NFT-Маркет
                 </Link>
-                <Link to="/login" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
-                  Личный кабинет
+                <Link to="/tickets" className="text-foreground hover:text-exhibition-gold py-2 transition-colors">
+                  Купить билет
                 </Link>
               </nav>
             </SheetContent>
