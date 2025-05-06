@@ -114,6 +114,41 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Анимации для главного изображения */
+.engraving-animation {
+  position: relative;
+  animation: subtle-float 8s ease-in-out infinite;
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-5px) scale(1.02); }
+}
+
+/* Анимации для кроссфейда изображений */
+@keyframes crossfade {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* Готический шрифт для заголовков выставки */
 @font-face {
   font-family: 'GothicFont';
@@ -186,11 +221,6 @@
 }
 
 /* Анимации для кроссфейда изображений */
-@keyframes crossfade {
-  0%, 100% { opacity: 0; }
-  25%, 75% { opacity: 1; }
-}
-
 .animate-crossfade-1 {
   animation: crossfade 16s infinite;
 }

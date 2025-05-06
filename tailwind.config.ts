@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+ioctl Fuzz buzz MatchType tailwindcss';
+export type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
@@ -7,6 +8,8 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   prefix: "",
   theme: {
@@ -67,12 +70,12 @@ const config = {
           },
         },
         exhibition: {
-          anthracite: "#2A2D34",
-          beige: "#F5F1E6",
-          darkblue: "#0A2463",
-          gold: "#D4AF37",
-          aquamarine: "#00C4CC",
-          cinnabar: "#E63946",
+          anthracite: '#1E1E1E',
+          beige: '#F5F1E6',
+          darkblue: '#13294B',
+          gold: '#D4AF37',
+          aquamarine: '#00C4CC',
+          cinnabar: '#E63946',
         },
       },
       borderRadius: {
@@ -105,6 +108,8 @@ const config = {
         "slide-up": "slide-up 0.8s ease-out forwards 0.3s"
       },
       fontFamily: {
+        'sans': ['Roboto Mono', 'monospace'],
+        'serif': ['Playfair Display', 'serif'],
         serif: ['GothicFont', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
